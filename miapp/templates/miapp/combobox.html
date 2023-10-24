@@ -1,0 +1,16 @@
+<div class="row d-xxl-none" style="height: 2vh;"></div>
+<div class="row d-xxl-none">
+    <div class="col-1"></div>
+    <div class="col-3">
+        <form action="{% url 'base' %}" method="GET">
+        <div class="col">
+            <select name="entidad" onchange="this.form.submit()">
+                <option value="Todos" {% if entidad_seleccionada == "Todos" %}selected{% endif %}>Todos</option>
+                {% for entidad in entidades%}
+                    <option value={{entidad.nombre}} {%if entidad_seleccionada == entidad.nombre%}selected{%endif%}>{{entidad}}</option>       
+                {% endfor %}
+            </select>
+        </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certamen2</title>
+    <link rel="stylesheet" href="{% static 'miapp/css/bootstrap.css' %}"/>
+    <link rel="stylesheet" href="{% static 'miapp/css/estilos.css' %}" />
+
+</head>
+<body>
+    <div class="container-fluid fondobase" style="min-height: 100vh;">
+        <div class="row" style="height: 2vh; background-color: black;"></div>
+        <div class="row" id="header">
+            <div class="col-3"><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_UTFSM.png" alt="logousm" class="img-fluid" id="logousm"></a></div>
+            <div class="col-9"><h1 class="centro titulo"> <br>Sistema integrado de Notificaciones</h1></div>
+        </div>
+    <div class="row" style="height: 2vh; background-color: black;"></div>
+    <div class="row bg-light d-none d-md-block d-xxl-none">
+        <nav class="navbar navbar-light" style="background-color: #96ADC5;">
+            <div class="col-1"></div>
+            <a class="nav-item nav-link col-1 fuentenav" href="">Inicio</a>
+            <a class="nav-item nav-link col-1 fuentenav" href="{% url 'admin:index' %}">Administración</a>
+            <div class="col-9"></div>
+        </nav>
+    </div>
+    {% include 'miapp/combobox.html'%}
+    {% include 'miapp/ordenador.html'%}
+    {% include 'miapp/celular.html'%}
+    {% include 'miapp/pantalla.html'%}
+
+    <div class="row" style="height: 2vh; background-color: black;"></div>
+    <div class="row centro" style="margin-top: 2vh;margin-bottom: 2vh;"><h5>Hecho por: </h5><a href="https://github.com/Nmcp1/Certamen2-TLP"><h5>Maximiliano Cornejo</h5></a></div>
+    <div class="row" style="height: 2vh; background-color: black;"></div>
+    </div>
+    <script src="{% static 'miapp/js/bootstrap.js' %}"></script>
+</body>
+</html>

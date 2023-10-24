@@ -1,0 +1,19 @@
+
+<div class="row d-block d-md-none">
+    <div class="col-12">
+        <div class="row">
+        {% for comunicado in comunicados %}
+        {% if comunicado.visible == True%}
+        <div class="card" style="width: 92vw;">
+            <div class="card-body">
+              <h5 class="card-title">{{comunicado.titulo}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{comunicado.entidad.nombre}}</h6>
+              <h6 class="card-subtitle mb-2 text-muted" style="font-size: xx-small;">{{comunicado.fecha_publicacion}}</h6>
+              <p class="card-text">{{comunicado.detallecorto}}</p>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+.fondobase{
+    background-color: #D8DBE2;
+}
+
+#combobox{
+    margin-bottom: 2vh;
+}
+#logousm{
+    margin-left: 3vw;
+   max-width:12vw;
+   min-width: 120px;
+}
+
+.imagens{
+    margin-left: 3vw;
+   max-width:66vw;
+   min-width: 120px;
+   margin-top: 3vh;
+}
+
+.centro{
+    text-align: center;
+}
+
+#margencartas{
+    margin: 2vw;
+}
+.card{
+    margin: 1vh;
+    min-width: 100px;
+
+}
+
+.horatexto{
+    text-size-adjust: 10px;
+}
+
+.textomedio{
+    text-align: center;
+}
+
+.ajusteimagen{
+    width: 20vw;
+    margin-left: 5vw;
+
+}
+
+.ajusteimagencarrusel{
+    width: 100vw;
+    height: 60vh;
+}
+h4{
+    font-size: 2vw;
+}
+
+h3{
+    font-size: 4vw;
+}
+
+.fuentenav{
+    font-weight: 900;
+}
+
+#titulopantalla{
+    height: 10vh;
+    font-size: 6vh;
+    font-weight: 1200;
+}
+
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

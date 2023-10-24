@@ -1,0 +1,36 @@
+
+<div class="row d-none d-xxl-block">
+  <div class="col">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active ajusteimagencarrusel img-fluid">
+          <img src="https://png.pngtree.com/background/20230615/original/pngtree-wallpaper-of-a-group-of-cats-with-different-eyes-picture-image_3545657.jpg" class="d-block w-100" alt="..." style="height: 100%;">
+        </div>
+        {%for comunicado in comunicados%}
+        {% if comunicado.visible == True%}
+        <div class="carousel-item">
+          <div class="card ajusteimagencarrusel">
+              <div class="card-body">
+                <h3 class="card-title">{{comunicado.titulo}}</h3>
+                <h4 class="card-subtitle mb-2 text-muted">{{comunicado.entidad.nombre}}</h4>
+                <h4 class="card-subtitle mb-2 text-muted">{{comunicado.fecha_publicacion}}</h4>
+                <p class="card-text" style="font-size: 2.5vw;">{{comunicado.detalle}}</p>
+              </div>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
+  </div>
+</div>
+

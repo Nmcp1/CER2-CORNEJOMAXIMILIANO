@@ -1,0 +1,22 @@
+
+<div class="row d-none d-md-block d-xxl-none" style="height: 2vh;"></div>
+<div class="row d-none d-md-block d-xxl-none "style="min-height: 2vh;" >
+    <div class="col-12">
+        <div class="row">
+        {% for comunicado in comunicados %}
+        {% if comunicado.visible == True%}
+        <div class="card" style="width:30vw;">
+            <div class="card-body">
+              <h5 class="card-title">{{comunicado.titulo}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{comunicado.entidad.nombre}}</h6>
+              <h6 class="card-subtitle mb-2 text-muted" style="font-size: xx-small;">{{comunicado.fecha_publicacion}}</h6>
+              <p class="card-text">{{comunicado.detalle}}</p>
+            </div>
+        </div>
+        
+        {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+    
+</div>
